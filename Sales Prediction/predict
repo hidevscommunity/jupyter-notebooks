@@ -1,0 +1,14 @@
+import pickle
+
+def model_prediction(features):
+    
+    pickled_model = pickle.load(open('C:/Users/Sakshi Rohida/Desktop/deepak sir ML projects/Sales_Prediction/model/Sales_PredictionLinear_Regresssion.pkl', 'rb'))
+    Sales = str(list(pickled_model.predict(features)))
+    
+    return str(f'The Sale is {Sales}')
+
+TV = float(input("Enter value:"))
+Radio = float(input("Enter value:"))
+Newspaper = float(input("Enter value:"))
+
+print(model_prediction([[TV,Radio,Newspaper]]))

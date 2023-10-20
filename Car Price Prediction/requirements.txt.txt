@@ -1,0 +1,8 @@
+numpy==1.21.4
+pandas==1.5.1
+ply==3.11
+pickleshare==0.7.5
+matplotlib==3.6.0
+scikit-learn==1.1.2
+seaborn==0.12.1
+statsmodels==0.13.5
